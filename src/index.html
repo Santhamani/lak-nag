@@ -2,13 +2,141 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>LakNag</title>
+  <title>Lakshya IT Consulting Private Limited</title>
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
+  <meta charset="utf-8">
+    
+    <!--====== Title ======-->
+    <title>Lakshya IT Consulting Private Limited</title>
+    
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+        
+    <!--====== Slick CSS ======-->
+    <link rel="stylesheet" href="assets/css/slick.css">
+        
+    <!--====== Font Awesome CSS ======-->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        
+    <!--====== Line Icons CSS ======-->
+    <link rel="stylesheet" href="assets/css/LineIcons.css">
+        
+    <!--====== Animate CSS ======-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+        
+    <!--====== Bootstrap CSS ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    
+    <!--====== Default CSS ======-->
+    <link rel="stylesheet" href="assets/css/default.css">
+    
+    <!--====== Style CSS ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="assets/js/vendor/jquery.min.js"></script>
+    <script src="assets/js/vendor/highlight.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+  
 </head>
+
+ <!-- script for owl carousel -->
+ 
+
 <body>
+
+   <!--====== PRELOADER PART START ======-->
+
+ <div class="preloader">
+  <div class="loader">
+      <div class="ytp-spinner">
+          <div class="ytp-spinner-container">
+              <div class="ytp-spinner-rotator">
+                  <div class="ytp-spinner-left">
+                      <div class="ytp-spinner-circle"></div>
+                  </div>
+                  <div class="ytp-spinner-right">
+                      <div class="ytp-spinner-circle"></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!--====== PRELOADER PART ENDS ======-->
+
   <app-root></app-root>
+
+  <script type="text/javascript">
+    var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode:"f2d2ed09bc4cf2e01893b63ccb8defe5ba51f00398697a9046f2827613307d683deba5ef1cd471b5fb06057101f0de04", values:{},ready:function(){}};var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
+    </script>
+
+  <!--====== Jquery js ======-->
+  <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+  <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+  
+  <!--====== Bootstrap js ======-->
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  
+  <!--====== Plugins js ======-->
+  <script src="assets/js/plugins.js"></script>
+  
+  <!--====== Slick js ======-->
+  <script src="assets/js/slick.min.js"></script>
+  
+  
+  <!--====== Counter Up js ======-->
+  <script src="assets/js/waypoints.min.js"></script>
+  <script src="assets/js/jquery.counterup.min.js"></script>
+  
+  
+  <!--====== Appear js ======-->
+  <script src="assets/js/jquery.appear.min.js"></script>
+  
+  <!--====== WOW js ======-->
+  <script src="assets/js/wow.min.js"></script>
+  
+  <!--====== Headroom js ======-->
+  <script src="assets/js/headroom.min.js"></script>
+  
+  <!--====== Jquery Nav js ======-->
+  <script src="assets/js/jquery.nav.js"></script>
+  
+  <!--====== Scroll It js ======-->
+  <script src="assets/js/scrollIt.min.js"></script>
+  
+  <!--====== Main js ======-->
+  <script src="assets/js/main.js"></script>
+  
+
+ 
+  <script>
+    $(document).ready(function() {
+      var owl = $('.owl-carousel');
+      owl.owlCarousel({
+        items: 4,
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 1000,
+        autoplayHoverPause: true
+      });
+      $('.play').on('click', function() {
+        owl.trigger('play.owl.autoplay', [1000])
+      })
+      $('.stop').on('click', function() {
+        owl.trigger('stop.owl.autoplay')
+      })
+    })
+  </script>
+    
+
 </body>
 </html>
