@@ -25,7 +25,7 @@ const routes: Routes = [
     path:"services", component:ServicesComponent
   },
   {
-    path:"zoho_services", component:ZohoComponent
+    path:"services/zoho_services", component:ZohoComponent
   },
   {
     path:"contact", component:ContactComponent
