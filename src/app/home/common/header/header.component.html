@@ -5,8 +5,8 @@
         <div class="row">
             <div class="col-lg-12">
                 <nav class="navbar navbar-expand-lg">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="assets/images/lit_logo2.png" alt="Logo" width="30%">
+                    <a class="col-md-3 navbar-brand" href="index.html">
+                        <img src="assets/images/lit_logo2.png" alt="Logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -19,23 +19,26 @@
                     <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                         <ul id="nav" class="navbar-nav m-auto">
                             <li class="nav-item">
-                                <a routerLink="home" routerLinkActive="active"
-                                    [routerLinkActiveOptions]="{exact: true}">Home</a>
+                                <a routerLink="/home" routerLinkActive="active"
+                                    routerLinkActiveOptions="{exact: true}">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a [routerLink]='"about"' routerLinkActive="active">About</a>
+                                <a routerLink="/about" routerLinkActive="active">About</a>
                             </li>
                             <li class="nav-item">
-                                <a [routerLink]='"services"' routerLinkActive="active">Services</a>
+                                <a routerLink="/services" routerLinkActive="active">Services</a>
                             </li>
                             <li class="nav-item">
-                                <a [routerLink]='"partners"' routerLinkActive="active">Partners</a>
+                                <a routerLink="/services/zoho_services" routerLinkActive="active">Zoho Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/partners" routerLinkActive="active">Partners</a>
                             </li>
                             <!-- <li class="nav-item">
                                     <a routerLink="Blog">Blog</a>
                                 </li> -->
                             <li class="nav-item">
-                                <a routerLink="contact" routerLinkActive="active">Contact</a>
+                                <a routerLink="/contact" routerLinkActive="active">Contact</a>
                             </li>
                         </ul>
                     </div> <!-- navbar collapse -->

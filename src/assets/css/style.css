@@ -1696,8 +1696,9 @@ p {
 /*===========================
         08.BRAND css 
 ===========================*/
-.brand-wrapper {
-  border-top: 1px solid #dedede4f; }
+/* .brand-wrapper {
+  border-top: 1px solid #dedede4f; 
+} */
   .brand-wrapper .single-brand {
     float: left;
     width: 20%;
