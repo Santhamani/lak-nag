@@ -53,7 +53,7 @@
 
   <!--====== PRELOADER PART START ======-->
 
-  <div class="preloader">
+  <!-- <div class="preloader">
     <div class="loader">
       <div class="ytp-spinner">
         <div class="ytp-spinner-container">
@@ -68,7 +68,15 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
+  <ngx-spinner
+  bdColor="rgba(51,51,51,0.8)"
+  size="medium"
+  color="#fff"
+  type="ball-scale-multiple"
+>
+  <p style="font-size: 20px; color: white">Loading...</p>
+</ngx-spinner>
 
   <!--====== PRELOADER PART ENDS ======-->
 
@@ -118,7 +126,7 @@
 
 
 
-  <script>
+  <!-- <script>
     $(document).ready(function () {
       var owl = $('.owl-carousel');
       owl.owlCarousel({
@@ -136,7 +144,7 @@
         owl.trigger('stop.owl.autoplay')
       })
     })
-  </script>
+  </script> -->
 
 
 </body>
