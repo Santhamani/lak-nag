@@ -1,5 +1,6 @@
 import { Component,OnInit } from '@angular/core';
 import { NgxSpinnerService } from 'ngx-spinner';
+import * as $ from 'jquery'
 
 @Component({
   selector: 'app-root',
@@ -9,11 +10,16 @@ import { NgxSpinnerService } from 'ngx-spinner';
 
 export class AppComponent implements OnInit {
   
-  // constructor(private spinner: NgxSpinnerService){
+  constructor(private spinner: NgxSpinnerService){
 
-  // }
+  }
   
   ngOnInit(){
+    this.spinner.show();
  
+    setTimeout(() => {
+      /** spinner ends after 5 seconds */
+      this.spinner.hide();
+    }, 1000);
   }
 }

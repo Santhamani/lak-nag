@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { NgxSpinnerModule } from "ngx-spinner";
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
@@ -13,7 +15,8 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
 import { ZohoComponent } from './components/zoho/zoho.component';
-import { NgxSpinnerModule } from "ngx-spinner";
+import * as $ from 'jquery'
+
 
 @NgModule({
   declarations: [
@@ -25,10 +28,10 @@ import { NgxSpinnerModule } from "ngx-spinner";
     PortfolioComponent,
     ContactComponent,
     HomeComponent,
-    ZohoComponent
+    ZohoComponent,
   ],
   imports: [
-    BrowserModule,NgxSpinnerModule,
+    BrowserModule,NgxSpinnerModule,BrowserAnimationsModule,
     AppRoutingModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
